@@ -38,9 +38,6 @@ for id in train_split['Participant_ID']:
     print(ExtractSpec(id).shape)
     #Spec.loc[id] = ExtractSpec(id).flatten()
 
-##
-a_file = open("Spec.pkl", "wb")
-pickle.dump(SpecDict, a_file)
-a_file.close()
 
-##
+with open("Spec.pkl", "wb") as file:
+    pickle.dump(SpecDict,file)
