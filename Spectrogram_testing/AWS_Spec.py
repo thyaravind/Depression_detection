@@ -3,8 +3,8 @@ from pyAudioAnalysis import ShortTermFeatures
 import boto3 as boto
 import os
 import matplotlib.pyplot as plt
-access_key = os.environ['AKIA4HOYOH4X43CEOJYV']
-access_secret_key = os.environ['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']
+access_key = os.environ['']
+access_secret_key = os.environ['']
 
 conn = boto.connect_s3(access_key, access_secret_key)
 bucket = conn.get_bucket('aravindsamala')
