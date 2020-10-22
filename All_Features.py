@@ -19,9 +19,9 @@ def ExtractSpec(id):
 
 for id in train_split['Participant_ID']:
     featureDict[f'{id}'] = ExtractSpec(id)
-    print(ExtractSpec(id).shape)
+    print(featureDict[f'{id}'].shape)
 
 
 
-with open("feature.pkl", "wb") as file:
+with open("/Volumes/Macintosh HD - Data/Users/admin/Documents/HD Drive/DataProjects/DepressionData/feature.pkl", "wb") as file:
     pickle.dump(featureDict,file)
